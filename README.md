@@ -83,3 +83,133 @@ LegalEaseAI/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+Installation
+1. Clone the Repository
+git clone https://github.com/25bsccsds40-maker/LegalEaseAI.git
+2. Open the Project Folder
+cd LegalEaseAI
+3. Create a Virtual Environment
+python -m venv venv
+4. Activate the Virtual Environment
+
+For Windows:
+
+venv\Scripts\activate
+
+For macOS/Linux:
+
+source venv/bin/activate
+5. Install Required Dependencies
+python -m pip install -r requirements.txt
+
+If required, install the main packages separately:
+
+python -m pip install fastapi uvicorn streamlit python-docx
+▶️ Running the Project
+Start the Backend
+
+Open a terminal in the project root folder and run:
+
+python -m uvicorn backend.main:app --reload
+
+The FastAPI backend will run at:
+
+http://127.0.0.1:8000
+API Documentation
+
+FastAPI provides interactive API documentation at:
+
+http://127.0.0.1:8000/docs
+
+The Swagger UI allows users and developers to view and test the available API endpoints.
+
+Start the Frontend
+
+Open a second terminal and run:
+
+python -m streamlit run frontend/app.py
+
+The Streamlit application will be available at:
+
+http://localhost:8501
+📄 Supported Legal Documents
+🏠 Rental Agreement
+
+LegalEaseAI provides an interface for entering party details and rental-related information to generate a basic rental agreement document.
+
+🤝 Non-Disclosure Agreement (NDA)
+
+The application also provides an NDA option for generating a basic non-disclosure agreement document based on the information provided by the user.
+
+🔄 Application Workflow
+User
+  │
+  ▼
+Streamlit Frontend
+  │
+  ▼
+Select Legal Document Type
+  │
+  ▼
+Enter Party Details
+  │
+  ▼
+Enter Additional Details
+  │
+  ▼
+AI / Document Generation
+  │
+  ▼
+Formatted Legal Document
+  │
+  ▼
+Download DOCX
+🤖 AI Integration
+
+LegalEaseAI is designed with an AI-powered architecture for generating legal document content.
+
+The project includes an AI core responsible for handling AI-based document generation and provides a foundation for integrating Google's Gemini API into the legal document generation workflow.
+
+🔮 Future Enhancements
+Advanced AI-powered legal document generation
+More legal document templates
+Full Gemini API integration
+PDF export
+Legal document preview
+User authentication and accounts
+Database integration
+Document history
+Multi-language legal document generation
+Legal clause recommendations
+Improved document formatting
+Cloud deployment
+Secure document storage
+More advanced AI assistance
+Mobile-responsive interface
+⚠️ Disclaimer
+
+LegalEaseAI is an educational and academic project.
+
+The generated documents are intended for general informational and educational purposes only and should not be considered a substitute for professional legal advice.
+
+Users should consult a qualified legal professional for legal matters requiring professional legal advice.
+
+📌 Project Status
+
+Status: Active Development
+
+LegalEaseAI is an academic project focused on developing an AI-powered legal document generation workflow using Generative AI, FastAPI, Streamlit, and automated document generation.
+
+📜 License
+
+This project is developed for educational and academic purposes.
+
+👩‍💻 Developed By
+
+LegalEaseAI Team
+
+B.Sc. Computer Science with Data Science
+
+Academic Project
+
+Thiruthangal Nadar College
